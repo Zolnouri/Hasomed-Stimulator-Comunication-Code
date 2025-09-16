@@ -37,8 +37,7 @@ This repository contains two Jupyter notebooks that implement a **USB protocol i
 
 3. Build a **payload** with one of the `update_*` helpers, then wrap and send it:
 
-4. For time‑varying patterns over multiple channels, use the vector helpers and the convenience sender:
-   ```python
+4. For time‑varying patterns over multiple channels, use the vector helpers and the convenience sender.
 
 
 > **Important**: Amplitude and pulse‑width units and allowed ranges are **device‑specific**. The code maps amplitudes and widths into bit‑fields (e.g., `int(2*amp)+300`, 12‑bit widths, 10‑bit amp fields, frequency blocks), but you must confirm the **exact physical units, limits, and safe operating ranges** in the official P24 documentation. Do **not** assume a default unit (mA/µs) without verifying.
